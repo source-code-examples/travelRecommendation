@@ -48,11 +48,11 @@ To get started with this project, follow the steps below:
    ```
 
 2. **Open the Project:**
-   Open the `travel_recommendation.html` file in your web browser.
+   Open the `index.html` file in your web browser.
 
 ### File Structure
 
-- `travel-recommendation.html`: The main HTML file for the project.
+- `index.html`: The main HTML file for the project.
 - `travel-recommendation.css`: The CSS file for styling the project.
 - `travel_recommendation.js`: The JavaScript file for adding interactivity.
 - `travel_recommendation_api.json`: The JSON file containing travel recommendation data.
