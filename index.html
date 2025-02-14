@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelCom</title>
+    <link rel="stylesheet" href="travel-recommendation.css" />
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="nav-left">
+          <!-- Icon and brand name -->
+          <i class="fa-solid fa-umbrella-beach travel-icon"></i>
+          <div>TravelCom</div>
+        </div>
+        <ul id="nav-middle">
+          <li><a href="./travel_recommendation.html">Home</a></li>
+          <li><a href="./pages/about.html">About Us</a></li>
+          <li><a href="./pages/contact.html">Contact Us</a></li>
+        </ul>
+        <div id="nav-right">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Enter destination"
+          />
+          <button id="search-button">Search</button>
+          <button id="reset-button">Reset</button>
+        </div>
+      </nav>
+      <!-- Background image container -->
+      <div id="bg-img" class="background">
+        <div id="header-title">
+          <h1>TravelCom</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <!-- Introduction text for the travel company -->
+        <p id="teaser-text">
+          Discover incredible destinations, dive into new cultures, and create
+          unforgettable memories with TravelCom.
+        </p>
+        <!-- Container for search results -->
+        <div id="search-results-div"></div>
+        <!-- Container for "no results" message -->
+        <div id="no-results-div"></div>
+      </div>
+    </main>
+
+    <!-- Sidebar for social media icons -->
+    <aside id="sidebar">
+      <div id="social-media-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.tiktok.com/" target="_blank"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </aside>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>About TravelCom</h2>
+          <p>
+            TravelCom is your ultimate travel companion, helping you discover
+            incredible destinations and create unforgettable memories.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h2>Contact Us</h2>
+          <p>Email: info@travelcom.com</p>
+          <p>Phone: +49 30 12345678</p>
+        </div>
+
+        <div class="footer-section">
+          <h2>Follow Us</h2>
+          <div class="social-media-links">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h2>Legal Information</h2>
+          <p>
+            <a href="./pages/impressum.html">Impressum</a> |
+            <a href="./pages/privacy.html">Privacy Policy</a> |
+            <a href="./pages/terms.html">Terms and Conditions</a>
+          </p>
+          <p>&copy; 2025 TravelCom. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
