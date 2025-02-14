@@ -1,0 +1,101 @@
+/* styling for about.html */
+
+#about-header-title {
+  font-size: 2.2rem;
+  color: white;
+  position: absolute;
+  top: 28%;
+  right: 24%;
+  font-style: italic;
+  opacity: 0.7;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+#company-info {
+  width: 35%;
+  opacity: 0.6;
+  transition: opacity 2.5s ease-in-out;
+  text-align: center;
+
+  background: linear-gradient(
+    to right,
+    rgb(120, 185, 185),
+    rgb(40, 82, 95),
+    rgb(0, 100, 100),
+    rgb(5, 60, 70),
+    rgb(0, 100, 100),
+    rgb(40, 82, 95),
+    rgb(120, 185, 185)
+  );
+  box-shadow: 0px 0px 20px black;
+  border-radius: 15px;
+
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px 20px;
+  position: absolute;
+  top: 26%;
+  left: 10%;
+}
+
+#team {
+  display: flex;
+  flex-direction: column;
+
+  width: 65%;
+  opacity: 0.8;
+  transition: opacity 2.5s ease-in-out;
+  text-align: center;
+
+  background: linear-gradient(
+    to left,
+    rgb(120, 185, 185),
+    rgb(40, 82, 95),
+    rgb(0, 100, 100),
+    rgb(5, 60, 70),
+    rgb(0, 100, 100),
+    rgb(40, 82, 95),
+    rgb(120, 185, 185)
+  );
+  box-shadow: 0px 0px 20px black;
+  border-radius: 15px;
+
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-size: 1.5rem; */
+  line-height: 1.5;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
+}
+
+#team h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+#team-members {
+  display: flex;
+  gap: 30px;
+}
+
+#team-members img {
+  width: 7rem;
+}
+
+.team-member-name {
+  font-size: 1.6rem;
+  color: goldenrod;
+}
+
+.team-role {
+  font-size: 1.3rem;
+}
+
+.role-description {
+  font-size: 1.1rem;
+}
