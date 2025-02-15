@@ -1,0 +1,353 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body and html elements take the full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Prevents scrolling of the entire background */
+  /* overflow: hidden; */
+}
+
+/* Main content should take available space */
+/* main {
+  min-height: calc(100vh - 80px);
+  flex: 1;
+  overflow-y: auto; 
+} */
+
+main {
+  flex: 1 0 auto; /* Hauptinhalt nimmt verfügbaren Platz ein */
+  overflow-y: auto; /* Ermöglicht das Scrollen im Hauptbereich */
+  /* Stellt sicher, dass main die Höhe des Viewports einnimmt */
+  min-height: 4vh;
+}
+
+.background {
+  background-image: url("./images/blue-city-bg-img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Fixes the background */
+  width: 100%;
+  height: 100vh; /* Volle Höhe des Viewports */
+  z-index: -1; /* Puts the background behind other elements */
+}
+
+/* style  travel_recommendation.html */
+
+/* style navbar */
+nav {
+  background: linear-gradient(135deg, #062747, #50779e, #0c5572);
+  padding: 1.2rem 10rem;
+  border-bottom: rgb(124, 121, 161) 1px solid;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  width: 99%;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#nav-left {
+  display: flex;
+  color: goldenrod;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.travel-icon {
+  font-size: 30px;
+}
+
+#nav-left div {
+  padding-left: 10px;
+  font-size: 26px;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+#nav-middle {
+  display: flex;
+  font-size: 18px;
+}
+
+#nav-middle li {
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+#nav-middle a {
+  color: #f1f1f1;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+#nav-middle a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+#nav-middle a:hover {
+  color: #ff6347;
+}
+
+#nav-middle a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#nav-right {
+  background-color: rgb(56, 110, 146);
+  padding: 8px;
+  border-radius: 15px;
+}
+
+#nav-right input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0c5572;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#nav-right button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #50779e;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#nav-right button:hover {
+  background-color: #3b5a77;
+  transform: scale(1.05);
+}
+
+#header-title {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  font-size: 3rem;
+  font-style: italic;
+  opacity: 0.8;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+#teaser-text {
+  width: 40%;
+  opacity: 0.8;
+  transition: opacity 3s ease-in-out;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgb(120, 185, 185),
+    rgb(40, 82, 95),
+    rgb(0, 100, 100),
+    rgb(5, 60, 70),
+    rgb(0, 100, 100),
+    rgb(40, 82, 95),
+    rgb(120, 185, 185)
+  );
+  box-shadow: 0px 0px 20px black;
+  text-shadow: 4px 4px 4px #000000;
+  border-radius: 15px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 30px 30px;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+#social-media-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  color: #f1f1f1;
+  font-size: 35px;
+  padding: 10px;
+}
+
+#social-media-icons i {
+  color: goldenrod;
+}
+
+#social-media-icons a:hover {
+  transform: scale(1.2);
+}
+
+#search-results-div {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll; /* Allows scrolling of the image container */
+  z-index: 1; /* Puts images in front of the background */
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+#search-results-div img {
+  width: 400px;
+  height: auto;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+#search-results-div {
+  position: absolute;
+  top: 18%;
+  right: 3%;
+  background: linear-gradient(
+    to right,
+    rgb(120, 185, 185),
+    rgb(40, 82, 95),
+    rgb(0, 100, 100),
+    rgb(5, 60, 70),
+    rgb(0, 100, 100),
+    rgb(40, 82, 95),
+    rgb(120, 185, 185)
+  );
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  width: 23%;
+  opacity: 0.9;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.results-div img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.results-div h3 {
+  color: goldenrod;
+  font-size: 24px;
+  margin: 1rem 0 -2rem 2rem;
+}
+
+.results-div p {
+  margin: -2rem 0 1rem 2.2rem;
+  width: 80%;
+}
+
+.results-div button {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  margin: -10px 0 0.5rem 2rem;
+  padding: 7px;
+  width: 8rem;
+  cursor: pointer;
+}
+
+/* Style footer */
+
+#footer {
+  background-color: #062747;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  /* bottom: 0; */
+  width: 100%;
+  /* Footer bleibt unten */
+  /* margin-top: auto; */
+  /* Optional: Vermeidet eine kleine Lücke */
+  top: -40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer-section h2 {
+  color: #ff6347;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #ff6347;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: goldenrod;
+}
+
+.social-media-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media-links a:hover {
+  color: #ff6347;
+}
